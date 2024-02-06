@@ -1,11 +1,32 @@
-
-import './styles/App.scss';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route
+} from "react-router-dom"
+import './App.scss';
+import Layout from "./components/Layout";
+import Home from "./components/Home";
+import About from "./components/About";
+import Loader from "react-loaders";
+import Contact from "./components/Contact";
 
 function App() {
   return (
-    <div className="App">
-      Hello World
-    </div>
+    <>
+    <Router>
+      <div className="main">
+        <Routes>
+          <Route path="/" element={<Layout />}>
+            <Route index element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
+          </Route>      
+        </Routes>
+      </div>     
+    </Router>
+
+    <Loader type="pacman" />
+    </>
   );
 }
 
