@@ -100,6 +100,12 @@ textarea {
             }
         }
 
+        a.projects-link {
+            &:after {
+                content: 'PROJECTS';
+            }
+        }
+
         a.contact-link {
             &:after {
                 content: 'CONTACT';
@@ -245,10 +251,22 @@ textarea {
             color: #333;
         }
     }
+
+    .profile-img {
+        width: 50%;
+        height: 100%;
+        top: 0;
+        padding-top: 50%;
+        margin-left: 50%;
+        position: absolute;
+        right: 0;
+        // overflow: hidden;
+    }
 }
 
 .about-page,
-.contact-page {
+.contact-page,
+.projects-page {
     .text-zone {
         position: absolute;
         left: 10%;
@@ -294,7 +312,9 @@ textarea {
         }
 
         p {
-            font-style: 13px;
+            font-size: 16px;            
+            font-family: 'Coolvetica';
+            font-weight: 100;
             color: #fff;
             font-family:  sans-serif;
             font-weight: 300;
@@ -474,4 +494,22 @@ textarea {
         float: right;
         border-radius: 4px;
     }
+}
+
+    
+    
+
+.button {
+    color: #ffd700;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 4px;
+    font-family: sans-serif;
+    text-decoration: none;
+    padding: 10px 18px;
+    border: 1px solid #ffd700;
+    margin-left: 90%;
+    // float: right;
+    animation: fadeIn 1s 1.8s backwards;
+    white-space: nowrap;
 }
