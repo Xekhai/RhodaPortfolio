@@ -10,7 +10,7 @@ const Projects = () => {
         <h1>Projects</h1>
         <div className=''>
             <p>
-            This is a mini finance dashboard that comes up after a
+            This is a finance dashboard that comes up after a
             login page with different sections like products,customer
             and team and a logout tab.
             </p>
